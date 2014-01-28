@@ -45,13 +45,13 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("barcoin");
-    case mBTC: return QString("millibarcoin (1 / 1,000)");
-    case uBTC: return QString("microbarcoin (1 / 1,000,000)");
+    case BTC: return QString("meecoin");
+    case mBTC: return QString("millimeecoin (1 / 1,000)");
+    case uBTC: return QString("micromeecoin (1 / 1,000,000)");
     default: return QString("???");
     }
 }
-//a single unit (.00000001) of barcoin is called a "wander."
+//a single unit (.00000001) of meecoin is called a "wander."
 qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
